@@ -6,9 +6,9 @@ class Api::V1::ExerciseController < ApplicationController
 
     def create  
         exercise = Exercise.new(exercise_params)
-        
+
         if exercise.save
-            render json: exercise, status: :accepted
+            render json: ExerciseSerializer.new(exercise), status: :accepted
         else
             render json: {errors: exercise.errors.full_messages}, status: unprocessible_entity
         end
