@@ -1,12 +1,12 @@
 class Api::V1::ExerciseController < ApplicationController
     def index
         exercises = Exercise.all
-        render json: exercises
+        render json: ExerciseSerializer.new(exercises)
     end
 
     def create  
         exercise = Exercise.new(exercise_params)
-
+        
         if exercise.save
             render json: exercise, status: :accepted
         else
@@ -18,6 +18,6 @@ class Api::V1::ExerciseController < ApplicationController
     private 
 
     def exercise_params
-        params.require(:exercise).permit(:name, :description, :category)
+        params.require(:exercise).permit(:name, :description, :category_id)
     end
 end
