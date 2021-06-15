@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.destroy_all
 Exercise.destroy_all
+Routine.destroy_all
 
 upperbody = Category.create(name:"upperbody")
 lowerbody = Category.create(name:"lowerbody")

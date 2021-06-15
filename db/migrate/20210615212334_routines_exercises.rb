@@ -5,5 +5,6 @@ class RoutinesExercises < ActiveRecord::Migration[6.1]
       t.belongs_to :exercise
 
       t.timestamps  
+    end
   end
 end
