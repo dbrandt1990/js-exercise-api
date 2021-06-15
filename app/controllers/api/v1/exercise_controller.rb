@@ -21,3 +21,4 @@ class Api::V1::ExerciseController < ApplicationController
         params.require(:exercise).permit(:name, :description, :category_id)
     end
 end
+
