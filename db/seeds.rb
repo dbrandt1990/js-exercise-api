@@ -21,7 +21,7 @@ squat = Exercise.create(name:"squats", category_id: 2, description:"Stand with l
 vsit = Exercise.create(name:"v-sit", category_id: 3, description:"Sit on floor with legs extened in front. Lift the legs about one foot off the ground and lean back keeping your back stright and reaching hands forward. Find the balance point and hold.")
 highknees = Exercise.create(name:"high knees", category_id: 4, description:"Stand with arms extended in front. Jog in place lifting the knees as high as comfortable. Try not to wobble or drop the arms.")
 
-spartan = Routine.create(title:"The Spartan",content: "push-ups: 3 x 25, pull-ups: 3 x 10, squats: 4 x 35, v-sit: 3 x 2 min, highknees: 3 x 2 min", category_id: 5)
+spartan = Routine.create(title:"The Spartan",content: "pushups: 3 x 25, pullups: 3 x 10, squats: 4 x 35, v-sit: 3 x 2 min, highknees: 3 x 2 min", category_id: 5)
 
 spartan.exercises.push(pushup)
 spartan.exercises.push(pullup)
