@@ -32,6 +32,8 @@ explorer.exe index.html
 ```
 rails s
 ```
+## Blog 
+ [Blog post on medium](https://dvbrandt90.medium.com/flatiron-javascript-project-b2e276aa811a)
 
 ## Authors
 
